@@ -1,0 +1,275 @@
+.page {
+  --ink: #202123;
+  --muted: #6f6f6b;
+  --line: #deded8;
+  --panel: #f2f2ed;
+  min-height: 100vh;
+  background: #fff;
+  color: var(--ink);
+  font-family: var(--font-geist-sans), Arial, sans-serif;
+}
+
+.article {
+  width: min(100% - 64px, 1280px);
+  margin: 0 auto;
+}
+
+.hero {
+  padding: 104px 0 88px;
+  border-bottom: 1px solid var(--line);
+}
+
+.kicker {
+  margin: 0 0 24px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(60px, 7vw, 104px);
+  font-weight: 450;
+  letter-spacing: -0.065em;
+  line-height: 0.95;
+}
+
+.updated {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 24px;
+  margin: 38px 0 0;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.updated span + span::before {
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  margin: 0 24px 3px 0;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.document {
+  display: grid;
+  grid-template-columns: minmax(190px, 260px) minmax(0, 720px);
+  justify-content: space-between;
+  gap: 96px;
+  padding: 80px 0 120px;
+}
+
+.sidebar {
+  position: sticky;
+  top: 32px;
+  align-self: start;
+}
+
+.sidebar > p {
+  margin: 0 0 20px;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid var(--line);
+}
+
+.sidebar a {
+  padding: 7px 0 7px 18px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.35;
+  text-decoration: none;
+  transition: color 160ms ease;
+}
+
+.sidebar a:hover,
+.sidebar a:focus-visible {
+  color: var(--ink);
+}
+
+.content {
+  min-width: 0;
+}
+
+.content section {
+  scroll-margin-top: 32px;
+}
+
+.content section + section {
+  margin-top: 80px;
+  padding-top: 80px;
+  border-top: 1px solid var(--line);
+}
+
+.content h2 {
+  margin: 0 0 28px;
+  font-size: clamp(30px, 4vw, 42px);
+  font-weight: 450;
+  letter-spacing: -0.045em;
+  line-height: 1.1;
+}
+
+.content p,
+.content li {
+  color: #454541;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.content p {
+  margin: 0;
+}
+
+.content p + p,
+.content ul + p {
+  margin-top: 24px;
+}
+
+.content ul {
+  margin: 24px 0 0;
+  padding-left: 24px;
+}
+
+.content li + li {
+  margin-top: 8px;
+}
+
+.content .lead {
+  color: var(--ink);
+  font-size: clamp(20px, 2.5vw, 25px);
+  letter-spacing: -0.025em;
+  line-height: 1.55;
+}
+
+.callout {
+  margin-top: 40px;
+  padding: 30px 32px;
+  background: var(--panel);
+}
+
+.callout p {
+  color: var(--ink);
+  font-weight: 650;
+}
+
+.callout ul {
+  margin-top: 14px;
+}
+
+.content a {
+  color: var(--ink);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.content a:hover {
+  text-decoration-thickness: 2px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px 0 44px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: var(--ink);
+}
+
+@media (max-width: 800px) {
+  .article {
+    width: min(100% - 40px, 1280px);
+  }
+
+  .hero {
+    padding: 72px 0 64px;
+  }
+
+  .hero h1 {
+    font-size: clamp(52px, 16vw, 76px);
+  }
+
+  .document {
+    grid-template-columns: 1fr;
+    gap: 64px;
+    padding: 56px 0 88px;
+  }
+
+  .sidebar {
+    position: static;
+    padding: 24px;
+    background: var(--panel);
+  }
+
+  .sidebar nav {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px 24px;
+    border-left: 0;
+  }
+
+  .sidebar a {
+    padding: 0;
+  }
+
+  .content section + section {
+    margin-top: 56px;
+    padding-top: 56px;
+  }
+}
+
+@media (max-width: 480px) {
+  .article {
+    width: min(100% - 32px, 1280px);
+  }
+
+  .hero {
+    padding: 60px 0 52px;
+  }
+
+  .updated {
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 28px;
+  }
+
+  .updated span + span::before {
+    display: none;
+  }
+
+  .sidebar nav {
+    grid-template-columns: 1fr;
+  }
+
+  .callout {
+    padding: 24px;
+  }
+
+  .footer {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sidebar a {
+    transition: none;
+  }
+}
