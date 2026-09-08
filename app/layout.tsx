@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { pretendard } from "@/lib/fonts";
 
 export const metadata: Metadata = {
-  title: "Hyper Soso",
+  title: "Hyper SoSo",
   description: "HyperSoso, Making fun stuff",
 };
 

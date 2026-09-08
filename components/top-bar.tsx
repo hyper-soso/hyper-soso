@@ -12,7 +12,7 @@ export default function TopBar({ product, section }: TopBarProps) {
       <Link
         href="/"
         aria-label="HyperSoSo home"
-        className="relative block h-8 w-[76px] overflow-hidden"
+        className="relative block h-8 w-16 overflow-hidden"
       >
         <Image
           src="/logo.png"
@@ -32,7 +32,10 @@ export default function TopBar({ product, section }: TopBarProps) {
           <span>{product}</span>
           {section ? (
             <>
-              <span className="hidden text-[#6f6f6b] sm:inline" aria-hidden="true">
+              <span
+                className="hidden text-[#6f6f6b] sm:inline"
+                aria-hidden="true"
+              >
                 /
               </span>
               <span className="hidden text-[#6f6f6b] sm:inline">{section}</span>
