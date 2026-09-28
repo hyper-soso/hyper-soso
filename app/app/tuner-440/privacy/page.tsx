@@ -4,9 +4,9 @@ import TopBar from "@/components/top-bar";
 import styles from "./privacy.module.css";
 
 export const metadata: Metadata = {
-  title: "Tuner440 Privacy Policy | HyperSoSo",
+  title: "Tuner440 Privacy Policy | HyperSoso",
   description:
-    "Learn how Tuner440, a tuner app by HyperSoSo, handles microphone access, on-device settings, and your privacy.",
+    "Learn how Tuner440, a tuner app by HyperSoso, handles microphone access, on-device settings, and your privacy.",
 };
 
 const navigation = [
@@ -31,7 +31,7 @@ export default function PrivacyPolicyPage() {
           <p className={styles.kicker}>TUNER440 · PRIVACY</p>
           <h1>Privacy policy</h1>
           <div className={styles.updated}>
-            <span>A tuner app by HyperSoSo</span>
+            <span>A tuner app by HyperSoso</span>
             <span>Effective September 8, 2026</span>
           </div>
         </header>
@@ -147,7 +147,7 @@ export default function PrivacyPolicyPage() {
               <h2>Contact us</h2>
               <p>
                 If you have questions about this Privacy Policy or Tuner440’s
-                privacy practices, contact HyperSoSo at{" "}
+                privacy practices, contact HyperSoso at{" "}
                 <a href="mailto:cs@hypersoso.com">cs@hypersoso.com</a>.
               </p>
             </section>
@@ -155,7 +155,7 @@ export default function PrivacyPolicyPage() {
         </div>
 
         <footer className={styles.footer}>
-          <Link href="/">© 2026 HyperSoSo</Link>
+          <Link href="/">© 2026 HyperSoso</Link>
           <a href="#top">Back to top ↑</a>
         </footer>
       </article>

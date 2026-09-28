@@ -14,9 +14,7 @@ export function HeroSection() {
           So <span className="georgia">extra.</span>
         </h1>
         <p className="mt-4 md:mt-8 text-center text-base md:text-lg leading-relaxed">
-          소소한 일상에,
-          <br />
-          조금 더 특별한 경험을.
+          소소한 일상을 특별하게
         </p>
       </hgroup>
       <Image

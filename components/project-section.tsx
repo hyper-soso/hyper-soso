@@ -5,8 +5,7 @@ export function ProjectSection() {
   return (
     <section id="work">
       <p className="mx-auto max-w-3xl text-center text-lg md:text-2xl leading-relaxed font-medium text-balance break-keep">
-        Hyper SOSO는 기술과 디자인으로 일상의 문제를 해결합니다. 복잡한 과정을
-        단순하게 다듬어 누구나 쉽게 쓰는 서비스를 만듭니다.
+        HyperSoso는 기술과 디자인으로 더 나은 일상을 만듭니다.
       </p>
       <ol className="mt-8 md:mt-16 grid gap-8 md:grid-cols-3">
         {PROJECTS.map((item) => (

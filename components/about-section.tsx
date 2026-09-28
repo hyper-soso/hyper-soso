@@ -11,7 +11,7 @@ export function AboutSection() {
           자꾸 쓰고 싶은 것.
         </h2>
         <p className="mx-auto mt-4 md:mt-8 max-w-sm text-sm md:text-base leading-relaxed break-keep text-balance text-muted-foreground">
-          Hyper SOSO는 일상의 작은 순간을 위한 서비스를 만듭니다.
+          HyperSoso는 일상의 작은 순간을 위한 서비스를 만듭니다.
         </p>
       </hgroup>
     </section>

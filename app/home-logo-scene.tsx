@@ -47,7 +47,7 @@ function Logo() {
 export default function HomeLogoScene() {
   return (
     <Canvas
-      aria-label="Animated HyperSoSo three-dimensional logo"
+      aria-label="Animated HyperSoso three-dimensional logo"
       role="img"
       camera={{ position: [0, 0, 5], fov: 32 }}
       dpr={[1, 2]}

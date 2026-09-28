@@ -11,7 +11,7 @@ export const PROJECTS = [
     id: "tuner-440",
     title: "tuner-440",
     description:
-      "광고 없이 가볍고 빠르게 사용할 수 있는 기타 튜너·메트로놈 앱입니다.",
+      "빠르게 실행되고 정확하게 측정하는 가벼운 기타 튜너·메트로놈 앱입니다.",
     imgUrl: "/tuner440-logo.webp",
     bg_Url: "/texture-tuner440.jpg",
   },

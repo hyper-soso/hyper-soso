@@ -33,12 +33,12 @@ export async function sendContact(formData: FormData) {
   try {
     const resend = new Resend(process.env.RESEND_API_KEY);
     const from =
-      process.env.RESEND_FROM_EMAIL || "hyper soso <cs@hypersoso.com>";
+      process.env.RESEND_FROM_EMAIL || "HyperSoso <cs@hypersoso.com>";
     const { data, error } = await resend.emails.send({
       from,
       to: "cs@hypersoso.com",
       replyTo: email.trim(),
-      subject: "[hyper soso] 홈페이지 문의",
+      subject: "[HyperSoso] 홈페이지 문의",
       text: `이름: ${name.trim()}\n이메일: ${email.trim()}\n\n${message.trim()}`,
     });
 

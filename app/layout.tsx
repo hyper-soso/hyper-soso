@@ -3,8 +3,20 @@ import type { Metadata } from "next";
 import { pretendard } from "@/lib/fonts";
 
 export const metadata: Metadata = {
-  title: "Hyper Soso",
-  description: "소소한 일상을 조금 더 특별하게, Hyper Soso",
+  metadataBase: new URL("https://hypersoso.com"),
+  title: "HyperSoso",
+  description: "소소한 일상을 특별하게",
+  openGraph: {
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        type: "image/png",
+        alt: "HyperSoso",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

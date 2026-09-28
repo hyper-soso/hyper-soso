@@ -11,12 +11,12 @@ export default function TopBar({ product, section }: TopBarProps) {
     <header className="px-5 sm:px-8 h-16 flex items-center justify-between border-b border-black/10">
       <Link
         href="/"
-        aria-label="HyperSoSo home"
+        aria-label="HyperSoso home"
         className="relative h-8 w-16 block overflow-hidden"
       >
         <Image
           src="/logo.png"
-          alt="HyperSoSo"
+          alt="HyperSoso"
           fill
           priority
           sizes="76px"
