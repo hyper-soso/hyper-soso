@@ -3,13 +3,13 @@ import type { Metadata } from "next";
 import { pretendard } from "@/lib/fonts";
 
 export const metadata: Metadata = {
-  title: "Hyper SoSo",
-  description: "HyperSoso, Making fun stuff",
+  title: "Hyper Soso",
+  description: "소소한 일상을 조금 더 특별하게, Hyper Soso",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${pretendard.className} antialiased`}>
+    <html lang="ko" className={`${pretendard.className} antialiased`}>
       <body>{children}</body>
     </html>
   );

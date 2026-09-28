@@ -8,11 +8,11 @@ type TopBarProps = {
 
 export default function TopBar({ product, section }: TopBarProps) {
   return (
-    <header className="flex h-16 items-center justify-between border-b border-black/10 px-5 sm:px-8">
+    <header className="px-5 sm:px-8 h-16 flex items-center justify-between border-b border-black/10">
       <Link
         href="/"
         aria-label="HyperSoSo home"
-        className="relative block h-8 w-16 overflow-hidden"
+        className="relative h-8 w-16 block overflow-hidden"
       >
         <Image
           src="/logo.png"
@@ -26,19 +26,19 @@ export default function TopBar({ product, section }: TopBarProps) {
 
       {product ? (
         <div
-          className="flex items-center gap-2 text-[13px] text-[#202123]"
+          className="text-[13px] flex items-center gap-2 text-[#202123]"
           aria-label="Current page"
         >
           <span>{product}</span>
           {section ? (
             <>
               <span
-                className="hidden text-[#6f6f6b] sm:inline"
+                className="hidden sm:inline text-[#6f6f6b]"
                 aria-hidden="true"
               >
                 /
               </span>
-              <span className="hidden text-[#6f6f6b] sm:inline">{section}</span>
+              <span className="hidden sm:inline text-[#6f6f6b]">{section}</span>
             </>
           ) : null}
         </div>
